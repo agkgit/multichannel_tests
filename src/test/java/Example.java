@@ -12,9 +12,9 @@ public class Example {
 
 		visitor.openDialog("redhelp_bot");
 		visitor.froding(20, "qwertyuiopasdfghjklzxcvbnm");
-
-		visitor.openDialog("red_helper_bot");
-		visitor.froding(20, "qwertyuiopasdfghjklzxcvbnm");
+//
+//		visitor.openDialog("red_helper_bot");
+//		visitor.froding(20, "qwertyuiopasdfghjklzxcvbnm");
 
 		visitor.joiningThreads();
 	}

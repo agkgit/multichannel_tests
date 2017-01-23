@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
 public class TelegramVisitor {
 
@@ -34,7 +34,7 @@ public class TelegramVisitor {
 					botDriversDict.put(teleBot, driver);
 			}
 			WebDriverRunner.setWebDriver(botDriversDict.get(teleBot));
-			open(PATH + currentTeleBot);
+			Selenide.open(PATH + currentTeleBot);
 		}
 	}
 
@@ -49,24 +49,26 @@ public class TelegramVisitor {
 
 	public void froding(int count, String message) {
 
-		Runnable sendingMessages = () -> {
-			String tempDriverName = new String(currentTeleBot);
-			String tempMessage = new String(message);
-			int temp = count;
-			int i = 0;
-			while(i < temp) {
-				botDriversDict.get(tempDriverName).findElement(By.className("composer_rich_textarea")).sendKeys(tempMessage);
-				botDriversDict.get(tempDriverName).findElement(By.className("im_submit_send_label")).click();
-				i++;
-			}
-			botDriversDict.get(tempDriverName).quit();
-		};
+		Thread thread = new Thread(
+				() -> {
+					String tempDriverName = new String(currentTeleBot);
+					String tempMessage = new String(message);
+					int i = 0;
+					while(i < count) {
+						System.out.println("tempDriverName = " + tempDriverName + " tempMessage = " + tempMessage);
+						botDriversDict.get(tempDriverName).findElement(By.className("composer_rich_textarea")).sendKeys(tempMessage);
+						botDriversDict.get(tempDriverName).findElement(By.className("im_submit_send_label")).click();
+						i++;
+					}
+					botDriversDict.get(tempDriverName).quit();
+				}
+				);
 
-		Thread threadSendingMessages = new Thread(sendingMessages);
+		thread.start();
 
-		threadSendingMessages.start();
-		threadsFrodind.add(threadSendingMessages);
+		threadsFrodind.add(thread);
 	}
+
 
 	public void joiningThreads () throws InterruptedException {
 		for (Thread thread : threadsFrodind) {
