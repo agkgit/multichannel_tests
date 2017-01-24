@@ -19,21 +19,42 @@ public class TelegramVisitor {
 
 	String currentTeleBot = "";
 	final String PATH = "https://web.telegram.org/#/im?p=@";
-	Map<String, WebDriver> botDriversDict = new HashMap<String, WebDriver>();
-	List<Thread> threadsFrodind = new ArrayList<Thread>();
 
-	public void openDialog(String teleBot) {
+	Map<String, WebDriver>		botDriversMap =		new HashMap<String, WebDriver>();
+	Map<String, Boolean>		profilesPathsMap =	new HashMap<String, Boolean>();
+	List<Thread>				threadsFrodind =	new ArrayList<Thread>();
+
+	TelegramVisitor() {
+
+		profilesPathsMap.put("C:\\Users\\QA\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\zfm2045a.default", false);
+		profilesPathsMap.put("C:\\Users\\QA\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\zfm2045b.default", false);
+		profilesPathsMap.put("C:\\Users\\QA\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\zfm2045c.default", false);
+		profilesPathsMap.put("C:\\Users\\QA\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\zfm2045d.default", false);
+	}
+
+	public void openDialog(String teleBot) throws InterruptedException {
+		
+		Thread.sleep(5000);
+		
 		if (currentTeleBot != teleBot) {
 			currentTeleBot = teleBot;
-				if (botDriversDict.get(teleBot) == null) {
-					String defaultProfilePath = "C:\\Users\\QA\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\zfm2045d.default";
+				if (botDriversMap.get(teleBot) == null) {
+					String defaultProfilePath = "";
+
+					for (String key : profilesPathsMap.keySet()) {
+						if (profilesPathsMap.get(key) == false) {
+							defaultProfilePath = key;
+							break;
+						}
+					}
+					
 					FirefoxProfile profile = new FirefoxProfile(new File(defaultProfilePath));
 					WebDriver driver = new FirefoxDriver(profile);
 					driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-					WebDriverRunner.setWebDriver(driver);
-					botDriversDict.put(teleBot, driver);
+					//WebDriverRunner.setWebDriver(driver);
+					botDriversMap.put(teleBot, driver);
 			}
-			WebDriverRunner.setWebDriver(botDriversDict.get(teleBot));
+			WebDriverRunner.setWebDriver(botDriversMap.get(teleBot));
 			Selenide.open(PATH + currentTeleBot);
 		}
 	}
@@ -47,39 +68,39 @@ public class TelegramVisitor {
 		$(By.className("im_submit_send_label")).click();
 	}
 
-	public void froding(int count, String message) {
+	public void frod (int count, String message) {
 
 		Thread thread = new Thread(
 				() -> {
-					String tempDriverName = new String(currentTeleBot);
-					String tempMessage = new String(message);
+					String tempDriverName =		new String(currentTeleBot);
+					String tempMessage =		new String(message);
+
 					int i = 0;
 					while(i < count) {
-						System.out.println("tempDriverName = " + tempDriverName + " tempMessage = " + tempMessage);
-						botDriversDict.get(tempDriverName).findElement(By.className("composer_rich_textarea")).sendKeys(tempMessage);
-						botDriversDict.get(tempDriverName).findElement(By.className("im_submit_send_label")).click();
-						i++;
+						System.out.println("\t\tсообщение к " + tempDriverName + "No. " + i++);
+						botDriversMap.get(tempDriverName).findElement(By.className("composer_rich_textarea")).sendKeys(tempMessage + " " + i);
+						botDriversMap.get(tempDriverName).findElement(By.className("im_submit_send_label")).click();
 					}
-					botDriversDict.get(tempDriverName).quit();
+
+					botDriversMap.get(tempDriverName).quit();
 				}
-				);
+		);
 
 		thread.start();
 
 		threadsFrodind.add(thread);
 	}
 
-
-	public void joiningThreads () throws InterruptedException {
+	public void joinThreads () throws InterruptedException {
 		for (Thread thread : threadsFrodind) {
 			thread.join();
 		}
 	}
 
 	public void quitWebDrivers() {
-		for (String key : botDriversDict.keySet()) {
+		for (String key : botDriversMap.keySet()) {
 			System.out.println(key);
-			botDriversDict.get(key).quit();
+			botDriversMap.get(key).quit();
 		}
 	}
 }

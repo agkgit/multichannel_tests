@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ce75c46-ea47-4482-86c4-2974a1e73849" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TelegramVisitor.class" afterPath="$PROJECT_DIR$/target/classes/TelegramVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Example.class" afterPath="$PROJECT_DIR$/target/test-classes/Example.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TelegramVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/TelegramVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Example.java" afterPath="$PROJECT_DIR$/src/test/java/Example.java" />
@@ -37,13 +37,15 @@
       <file leaf-file-name="TelegramVisitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TelegramVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+            <state relative-caret-position="-368">
+              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding>
-                <element signature="e#694#713#0" expanded="true" />
-                <element signature="e#761#769#0" expanded="true" />
+                <element signature="e#696#715#0" expanded="true" />
+                <element signature="e#772#789#0" expanded="true" />
+                <element signature="e#840#848#0" expanded="true" />
                 <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
-                <element signature="method#joiningThreads#0;class#TelegramVisitor#0" expanded="false" />
+                <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+                <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,8 +54,8 @@
       <file leaf-file-name="Example.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="304">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -68,6 +70,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>quit</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -81,8 +88,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/DialogTelegramRH.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TelegramVisitor.java" />
         <option value="$PROJECT_DIR$/src/test/java/Example.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TelegramVisitor.java" />
       </list>
     </option>
   </component>
@@ -121,9 +128,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,10 +205,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -685,44 +692,45 @@
       <workItem from="1484819869694" duration="179000" />
       <workItem from="1484820127652" duration="601000" />
       <workItem from="1484838604465" duration="614000" />
-      <workItem from="1485159400844" duration="19881000" />
+      <workItem from="1485159400844" duration="19935000" />
+      <workItem from="1485244624416" duration="13399000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Example_testOne - 2017.01.23 at 16h 58m 02s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 13m 07s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 11m 36s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 15m 42s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 27m 19s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 24m 11s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 38m 45s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 25m 17s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 39m 18s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 28m 08s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 41m 23s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 30m 32s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 41m 49s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 32m 20s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 42m 17s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 33m 09s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 53m 56s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 34m 45s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Example_testOne - 2017.01.23 at 17h 54m 44s.xml">
+    <history-entry file="Example_testOne - 2017.01.24 at 17h 37m 30s.xml">
       <configuration name="Example.testOne" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43597000" />
+    <option name="totallyTimeSpent" value="57050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,7 +743,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -746,15 +754,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3531961" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.503792" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47683397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13752665" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -766,6 +773,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -807,7 +815,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -818,13 +826,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/TelegramVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="944">
+          <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
           <folding>
-            <element signature="e#694#713#0" expanded="true" />
-            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#696#715#0" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
+            <element signature="e#840#848#0" expanded="true" />
             <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
-            <element signature="method#joiningThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -842,10 +852,12 @@
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#694#713#0" expanded="true" />
-            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#696#715#0" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
+            <element signature="e#840#848#0" expanded="true" />
             <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
-            <element signature="method#joiningThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,10 +875,12 @@
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#694#713#0" expanded="true" />
-            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#696#715#0" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
+            <element signature="e#840#848#0" expanded="true" />
             <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
-            <element signature="method#joiningThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -884,10 +898,12 @@
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#694#713#0" expanded="true" />
-            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#696#715#0" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
+            <element signature="e#840#848#0" expanded="true" />
             <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
-            <element signature="method#joiningThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -905,10 +921,35 @@
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#694#713#0" expanded="true" />
-            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#696#715#0" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
+            <element signature="e#840#848#0" expanded="true" />
             <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
-            <element signature="method#joiningThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TelegramVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#696#715#0" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
+            <element signature="e#840#848#0" expanded="true" />
+            <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -953,9 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#DialogTelegramRH#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,21 +1037,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TelegramVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+        <state relative-caret-position="-368">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
-            <element signature="e#694#713#0" expanded="true" />
-            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#696#715#0" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
+            <element signature="e#840#848#0" expanded="true" />
             <element signature="method#sendMessage#0;class#TelegramVisitor#0" expanded="false" />
-            <element signature="method#joiningThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#joinThreads#0;class#TelegramVisitor#0" expanded="false" />
+            <element signature="method#quitWebDrivers#0;class#TelegramVisitor#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Example.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="304">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
