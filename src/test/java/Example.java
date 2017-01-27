@@ -16,6 +16,9 @@ public class Example {
 		visitor.openDialog("red_helper_bot");
 		visitor.frod(40, "red_helper_bot");
 
+		visitor.openDialog("KonakovoBot");
+		visitor.frod(40, "KonakovoBot");
+
 		visitor.joinThreads();
 	}
 }
